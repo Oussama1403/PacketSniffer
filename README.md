@@ -1,6 +1,7 @@
 # BS-PacketSniffer
 
 PyQt5 software to arp spoof an IP in local network and sniff their dns packets to output the websites they visit.
+![screenshot](screenshot.png)
 
 ## Installation
 Python3 \
