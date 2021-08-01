@@ -25,7 +25,7 @@ class MyWindow(QtWidgets.QMainWindow,Ui_MainWindow):
     GW_MAC = None
     def __init__(self):
         super().__init__()
-        sys.stdout = Stream(newText=self.onUpdateText) ##redirect prints to 'action_info'
+        sys.stdout = Stream(newText=self.onUpdateText) #redirect prints to 'action_info'
         self.setupUi(self)
         self.show()
         self.search_ip.clicked.connect(self.search_ip_thread)
