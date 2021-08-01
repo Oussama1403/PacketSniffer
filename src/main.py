@@ -25,7 +25,7 @@ class MyWindow(QtWidgets.QMainWindow,Ui_MainWindow):
     GW_MAC = None
     def __init__(self):
         super().__init__()
-        sys.stdout = Stream(newText=self.onUpdateText)
+        sys.stdout = Stream(newText=self.onUpdateText) ##redirect prints to 'action_info'
         self.setupUi(self)
         self.show()
         self.search_ip.clicked.connect(self.search_ip_thread)
@@ -279,7 +279,8 @@ class MyWindow(QtWidgets.QMainWindow,Ui_MainWindow):
                 sys.exit(1)
         #print("gwpoison ended")
     
-    def main_op_proc(self):
+    #main thread
+    def main_op_thread(self):
         th = threading.Thread(target=self.main_op)
         th.setDaemon(True)
         th.start()
@@ -305,13 +306,13 @@ class MyWindow(QtWidgets.QMainWindow,Ui_MainWindow):
             
     def SetDNS(self):
         self.SNIFF_SERVICE = "DNS"
-        self.main_op_proc()
+        self.main_op_thread()
     def SetGet(self):
         self.SNIFF_SERVICE = "HTTP GET"
-        self.main_op_proc()    
+        self.main_op_thread()    
     def SetPost(self):
         self.SNIFF_SERVICE = "HTTP POST"
-        self.main_op_proc()
+        self.main_op_thread()
     
     """
     def restorearp(targetip, targetmac, sourceip, sourcemac):
