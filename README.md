@@ -13,6 +13,7 @@
   <img  src="https://img.shields.io/github/issues-pr/Oussama1403/PacketSniffer" />
 </p>
 <br/>
+
 PyQt5 software to arp spoof an IP in local network and sniff their dns packets to output the websites they visit.
 ![screenshot](screenshot.png)
 
