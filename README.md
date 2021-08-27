@@ -17,7 +17,7 @@
 PyQt5 software to arp spoof an IP in local network and sniff their dns packets to output the websites they visit.
 ![screenshot](screenshot.png)
 
-## Installation
+## Requirements
 Python3 \
 PyQt5 \
 python-nmap module \
