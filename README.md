@@ -1,5 +1,18 @@
 # PacketSniffer
 
+<p>
+  <img  src="https://img.shields.io/github/stars/Oussama1403/SystemMonitor" />
+  <img src="https://img.shields.io/github/contributors/Oussama1403/SystemMonitor" />
+  <img src="https://img.shields.io/github/last-commit/Oussama1403/SystemMonitor" />
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Oussama1403.SystemMonitor" />
+  <img src="https://img.shields.io/github/languages/count/Oussama1403/SystemMonitor" />
+  <img src="https://img.shields.io/github/languages/top/Oussama1403/SystemMonitor" />
+
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg?color=f64152" />
+  <img  src="https://img.shields.io/github/issues/Oussama1403/SystemMonitor" />
+  <img  src="https://img.shields.io/github/issues-pr/Oussama1403/SystemMonitor" />
+</p>
+<br/>
 PyQt5 software to arp spoof an IP in local network and sniff their dns packets to output the websites they visit.
 ![screenshot](screenshot.png)
 
