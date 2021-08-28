@@ -19,7 +19,7 @@
 ![screenshot](screenshot.png)
 
 ## Requirements
-- Python3 
+- Python 3.8
 - PyQt5 
 - python-nmap module 
 - nmap 
