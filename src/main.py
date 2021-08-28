@@ -387,7 +387,7 @@ class MyWindow(QtWidgets.QMainWindow,Ui_MainWindow):
     def About(self):
         msg = QtWidgets.QMessageBox()
         msg.setWindowTitle("About")
-        msg.setText("BS-PacketSniffer:\nVersion:1.0\nDeveloper:Oussama Ben Sassi")
+        msg.setText("BS-PacketSniffer:\nVersion:2.0\nDeveloper:Oussama Ben Sassi")
         msg.setIcon(QtWidgets.QMessageBox.Information)
         msg.exec_()              
                
